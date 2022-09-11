@@ -3,12 +3,13 @@
 #include <stdio.h>
 /**
 *main - Prints ranom number to variable
+*
 *Return: Always (Successful)
 */
 int main(void)
 {
 	int n;
-	char last{} = "last digit of";
+	char last[] = "last digit of";
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
